@@ -1,0 +1,13 @@
+name: Call Security CI in Repo A
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  call-reusable:
+    uses: <saicharank0513-sys>/repo-a/.github/workflows/security-ci.yml@main
+    permissions:
+      contents: read
+      actions: read
