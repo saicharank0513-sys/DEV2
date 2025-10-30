@@ -11,4 +11,7 @@ jobs:
     permissions:
       contents: read
       actions: read
-
+    # If your called workflow expects inputs or needs caller secrets:
+    # with:
+    #   some_input: some_value
+    # secrets: inherit
