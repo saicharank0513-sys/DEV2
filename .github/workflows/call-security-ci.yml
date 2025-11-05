@@ -7,8 +7,9 @@ on:
 
 jobs:
   call-reusable:
-    # Use @v1 if you tagged Repo A; otherwise @main works too
-    uses: saicharank0513-sys/DEV/.github/workflows/security-ci.yml@v1
+    uses: saicharank0513-sys/DEV/.github/workflows/security-ci.yml@main
     permissions:
       contents: read
       actions: read
+    with:
+      service_name: orders-api
