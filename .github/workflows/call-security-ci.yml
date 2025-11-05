@@ -7,11 +7,8 @@ on:
 
 jobs:
   call-reusable:
-    uses: saicharank0513-sys/DEV/.github/workflows/security-ci.yml@main
+    # Use @v1 if you tagged Repo A; otherwise @main works too
+    uses: saicharank0513-sys/DEV/.github/workflows/security-ci.yml@v1
     permissions:
       contents: read
       actions: read
-    # If your called workflow expects inputs or needs caller secrets:
-    # with:
-    #   some_input: some_value
-    # secrets: inherit
